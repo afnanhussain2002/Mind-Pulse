@@ -5,6 +5,7 @@ import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
 import { heroIcons } from "../contans";
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
+import Generating from "./Generating";
 
 const Hero = () => {
     const parallaxRef = useRef(null)
@@ -68,6 +69,8 @@ const Hero = () => {
                 ))}
 
                 </ul>
+                <Generating className='absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2'/>
+
               </ScrollParallax>
             </div>
           <Gradient/>
@@ -84,6 +87,7 @@ const Hero = () => {
         </div>
         <BackgroundCircles/>
       </div>
+      <BottomLine/>
     </Section>
   );
 };
